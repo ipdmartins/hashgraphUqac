@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@hashgraph/sdk": "^2.18.6",
+    "dotenv": "^16.0.3"
+  }
+}
