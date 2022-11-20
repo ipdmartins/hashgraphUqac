@@ -12,4 +12,5 @@ async function checkBalance(user, accountId, client) {
   return `${currentUSer} account balance is: ${accountBalance.hbars.toTinybars()} tinybar.`;
 }
 
-module.exports.checkBalance = checkBalance;
+module.exports = { checkBalance };
+// module.exports.checkBalance = checkBalance;
