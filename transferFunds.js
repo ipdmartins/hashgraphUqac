@@ -20,7 +20,8 @@ module.exports = class TransferFunds {
     user1Client,
     user2Client,
     numberOfTransactions,
-    idThread
+    idThread,
+    nroThreads
   ) {
     //get the transaction beginning in millisec for analyzeTPS
     const milibefore = Date.now();
@@ -81,7 +82,12 @@ module.exports = class TransferFunds {
     const result = `ThreadID:${idThread} TPS:${one} ARD:${two}\n${user1}\n${user2}\n`;
 
     fs.appendFile(
-      this.path + "TransferFunds_" + numberOfTransactions + "_lots.txt",
+      this.path +
+        "TransferFunds_" +
+        nroThreads +
+        "_nroThreads_" +
+        numberOfTransactions +
+        "_lots.txt",
       result,
       (err) => {
         if (err) throw err;

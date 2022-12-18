@@ -12,7 +12,13 @@ module.exports = class SendMessage {
     this.path = "/home/ipdmartins/Documents/hederaUqac/";
   }
 
-  async getTopicId(user1Client, message, numberOfTransactions, bytes) {
+  async getTopicId(
+    user1Client,
+    message,
+    numberOfTransactions,
+    bytes,
+    numberOfThreads
+  ) {
     // create topic
     const topicTransaction = await new TopicCreateTransaction().execute(
       user1Client
@@ -26,7 +32,8 @@ module.exports = class SendMessage {
       message,
       numberOfTransactions,
       topicId,
-      bytes
+      bytes,
+      numberOfThreads
     );
   }
 
@@ -35,7 +42,8 @@ module.exports = class SendMessage {
     message,
     numberOfTransactions,
     topicId,
-    bytes
+    bytes,
+    numberOfThreads
   ) {
     var sumTxInputTxComfirmed = 0;
     var txconfirmedcount = 0;
@@ -90,6 +98,8 @@ module.exports = class SendMessage {
     fs.appendFile(
       this.path +
         "SendMessage_" +
+        numberOfThreads +
+        "_Threads_" +
         bytes +
         "_bytes_" +
         numberOfTransactions +

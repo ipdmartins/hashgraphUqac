@@ -17,16 +17,21 @@ const message1 = "L";
 const message10 = "Lorem ipsu";
 const message100 =
   "Lorem ipsum egestas lorem aliquam sapien, vivamus taciti innunc Lorem ipsum egestas lorem aliquam se";
-const numberOfThreads = 10;
-const numberOfTransactions = 100;
-// const typeTransaction = "transferFunds";
-const typeTransaction = "sendMessage";
+const numberOfThreads = 20;
+const numberOfTransactions = 20;
+const typeTransaction = "transferFunds";
+// const typeTransaction = "sendMessage";
 
 if (isMainThread) {
   for (let x = 1; x <= numberOfThreads; x++) {
     const idThread = 100 + x;
     const worker = new Worker(__filename, {
-      workerData: { numberOfTransactions, byteSize: 100, idThread },
+      workerData: {
+        numberOfTransactions,
+        byteSize: 100,
+        idThread,
+        numberOfThreads,
+      },
     });
     worker.once("message", function () {
       console.log("Thread worker id: " + worker.threadId + " finished");
@@ -43,6 +48,7 @@ async function executor() {
   const numberOfTransactions = workerData.numberOfTransactions;
   const byteSize = workerData.byteSize;
   const idThread = workerData.idThread;
+  const nroThreads = workerData.numberOfThreads;
 
   if (typeTransaction === "transferFunds") {
     const transfer = new TransferFunds();
@@ -52,7 +58,8 @@ async function executor() {
       user1Client,
       user2Client,
       numberOfTransactions,
-      idThread
+      idThread,
+      nroThreads
     );
   } else {
     const messager = new SendMessage();
@@ -61,7 +68,8 @@ async function executor() {
         user1Client,
         message1,
         numberOfTransactions,
-        byteSize
+        byteSize,
+        nroThreads
       );
     }
     if (byteSize === 10) {
@@ -69,7 +77,8 @@ async function executor() {
         user1Client,
         message10,
         numberOfTransactions,
-        byteSize
+        byteSize,
+        nroThreads
       );
     }
     if (byteSize === 100) {
@@ -77,7 +86,8 @@ async function executor() {
         user1Client,
         message100,
         numberOfTransactions,
-        byteSize
+        byteSize,
+        nroThreads
       );
     }
   }
