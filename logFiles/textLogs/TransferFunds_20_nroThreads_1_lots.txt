@@ -1,0 +1,60 @@
+ThreadID:108 TPS:0,7331377858291626 ARD:0,67
+User 1 new balance: 989174985395 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:115 TPS:0,6811989401741495 ARD:0,729
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:112 TPS:0,6435005858437984 ARD:0,822
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:120 TPS:0,8123477200520298 ARD:0,489
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:114 TPS:0,6410256645383223 ARD:0,791
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:116 TPS:0,6906077566391673 ARD:0,686
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:101 TPS:0,4065040587370328 ARD:0,731
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:105 TPS:0,41999159276625425 ARD:0,529
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:106 TPS:0,4089979661773251 ARD:0,754
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:117 TPS:0,4164931238930566 ARD:0,665
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:118 TPS:0,4812319379001084 ARD:0,414
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:111 TPS:0,43956042113417654 ARD:0,607
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:103 TPS:0,35087720472359923 ARD:1,018
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:119 TPS:0,40950042421325283 ARD:0,731
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:102 TPS:0,4239084416045783 ARD:0,713
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:104 TPS:0,35523977963517467 ARD:0,913
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:109 TPS:0,3748125961147244 ARD:0,823
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:107 TPS:0,36049024495058013 ARD:0,95
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:113 TPS:0,39077768159666487 ARD:0,733
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.
+ThreadID:110 TPS:0,3844675020635902 ARD:0,759
+User 1 new balance: 989173794285 tinybar.
+User 2 new balance: 1330008097796 tinybar.

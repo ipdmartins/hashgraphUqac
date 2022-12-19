@@ -1,0 +1,3 @@
+ThreadID:101 TPS:0,5515719186341786 ARD:0,158
+User 1 new balance: 989180940945 tinybar.
+User 2 new balance: 1330008092726 tinybar.
