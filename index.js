@@ -17,8 +17,8 @@ const message1 = "L";
 const message10 = "Lorem ipsu";
 const message100 =
   "Lorem ipsum egestas lorem aliquam sapien, vivamus taciti innunc Lorem ipsum egestas lorem aliquam se";
-const numberOfThreads = 20;
-const numberOfTransactions = 20;
+const numberOfThreads = 1;
+const numberOfTransactions = 1;
 const typeTransaction = "transferFunds";
 // const typeTransaction = "sendMessage";
 
@@ -28,7 +28,7 @@ if (isMainThread) {
     const worker = new Worker(__filename, {
       workerData: {
         numberOfTransactions,
-        byteSize: 100,
+        byteSize: 1,
         idThread,
         numberOfThreads,
       },

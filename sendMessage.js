@@ -4,6 +4,7 @@ const {
   TopicInfoQuery,
 } = require("@hashgraph/sdk");
 const transactionAnalizer = require("./transactionAnalizer");
+require("dotenv").config();
 const fs = require("fs");
 const { error } = require("console");
 
